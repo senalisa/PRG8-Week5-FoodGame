@@ -63,10 +63,13 @@ async function setup() {
   video.hide();
 
   //Like & Dislike Buttons
-  let likeBtn = createButton("Train Like", 'like');
-  let dislikeBtn = createButton("Train Dislike", 'dislike');
-  likeBtn.mousePressed(likedFunction);
-  dislikeBtn.mousePressed(dislikedFunction);
+
+  let likeBtn = document.querySelector("#likeBtn")
+  let dislikeBtn = document.querySelector("#dislikeBtn")
+
+  likeBtn.addEventListener("click", () => likedFunction())
+  dislikeBtn.addEventListener("click", () => dislikedFunction())
+  
   likeBtn.className = "button";
   dislikeBtn.className = "button";
 }
