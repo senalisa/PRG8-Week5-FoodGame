@@ -1,0 +1,63 @@
+
+body {
+    display: block;
+    width: 36vw; 
+    padding: 10px;
+    margin: 0 auto;
+    background-image: url("foodbg.png")
+}
+
+h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #0045B9;
+    border-radius: 7px;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+}
+
+div {
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img
+{
+  height:200px;
+  width:60%;
+  border:2px solid black;
+  border-radius:20px;
+  margin: 20px 20px 20px 130px;
+}
+
+header {
+	width: 100%;
+	padding-bottom: 25px;
+	flex-direction: column;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+    background-color: #FFFFFF; 
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0045B9; 
+    border: 2px solid #FFFFFF; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
