@@ -63,8 +63,8 @@ async function setup() {
   video.hide();
 
   //Like & Dislike Buttons
-  let likeBtn = createButton("Like", 'like');
-  let dislikeBtn = createButton("Dislike", 'dislike');
+  let likeBtn = createButton("Train Like", 'like');
+  let dislikeBtn = createButton("Train Dislike", 'dislike');
   likeBtn.mousePressed(likedFunction);
   dislikeBtn.mousePressed(dislikedFunction);
   likeBtn.className = "button";
@@ -88,11 +88,11 @@ function draw() {
   drawKeypoints();
   
   textSize(18);
-  text('Like : ' + addLike, 20, height - 50);
-  text('Dislike : ' + addDislike, 20, height - 30);
+  text('Like : ' + addLike + ' trained times', 20, height - 50);
+  text('Dislike : ' + addDislike + ' trained times', 20, height - 30);
 
   textSize(120);
-  text(outputLabel, width / 9, height - 70 );
+  text(outputLabel, 20, height - 120 );
   if (examplesAdded) {
     classify();
   }
